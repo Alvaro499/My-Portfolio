@@ -1,0 +1,141 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--font-black-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.container h2 {
+    padding: 2rem 1rem 1rem 2rem;
+    color: var(--font-white-color);
+    font-size: 2rem;
+}
+
+
+.cardContainer {
+    background: var(--font-black-color);
+    color: var(--font-white-color);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 1fr;
+    row-gap: 25px;
+justify-items: center;}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background: var(--font-black-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: left;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.card>div {
+
+    padding: 1rem 1rem;
+}
+
+.cardBody {
+    margin-top: auto;
+}
+
+.cardFooter {
+    margin-top: auto;
+}
+
+.cardTitleEquivalents {
+    list-style: disc;
+    margin-left: 1.5rem;
+    color: var(--font-white-color);
+    font-size: 0.8em;
+}
+
+.cardTitleEquivalents li {
+    margin: 0.5rem;
+
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-280deg);
+    width: 160%;
+    height: 130%;
+    background-image: conic-gradient(#fff 0deg, #fff 90deg, transparent 130deg, transparent 180deg, #4530FF 180deg, #4530FF 270deg, transparent 310deg, transparent 360deg);
+    transition: transform 1s;
+    z-index: -2;
+}
+
+.card:hover::before {
+    transform: translate(-50%, -50%) rotate(-100deg);
+
+}
+
+
+.card::after {
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: var(--font-black-color);
+    z-index: -1;
+}
+
+
+@media(min-width: 450px) {
+
+
+.card {
+    width: 380px;
+    height: 380px;
+}
+
+}
+
+@media(min-width: 768) {
+
+
+    .cardContainer {
+
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 25px;
+    }
+
+
+}
+
+@media(min-width: 1080px) {
+
+
+    .cardContainer {
+
+        grid-template-columns: repeat(auto, 1fr);
+    }
+
+
+}
+
+@media(min-width: 1200px) {
+
+    .card::before {
+        width: 200%;
+        height: 150%;
+    }
+
+}
