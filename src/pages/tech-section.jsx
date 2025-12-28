@@ -22,7 +22,7 @@ const technologies = [
 
 export default function TechSection() {
   return (
-    <main className={styles.container}>
+    <main className={styles.container} id="tech">
       <div className={styles.containerContainer}>
         <h2>Technologies I’ve Used in My Studies</h2>
         <div className={styles.cardContainer}>
