@@ -3,39 +3,40 @@ import Link from "next/link";
 import styles from "@/styles/project-section.module.css";
 
 const myProjects = [
-    {   title: "Project One", 
-        description: "Description for project one.",
+    {   title: "GAPA Reservations Appointements", 
+        description: "Sistema de gestión de citas para la empresa de Contabilidad GAPA. Los usuarios se registran y pueden solicitar reuniones detalladas. Además de recibir de notifiaciones con respecto",
         imageUrl: "/projects/project00.png",
         projectLink: "https://www.google.com/?hl=es"
     },
-    {   title: "Project One", 
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ut inventore magnam deleniti neque? Sint, inventore magni esse minus ea quo minima quidem iusto corrupti temporibus, recusandae, dolorem quos aperiam lorem lorem loremloremloremloremloremloremloremloremloremloremloremlorem..",
+    {   title: "Komodo", 
+        description: "Komodo Page, página para la promoción y venta de productos. Desarrollada con HTML, CSS y Vanila JS. posee carrito, paginas y ",
         imageUrl: "/projects/project00.png",
         projectLink: "https://www.google.com/?hl=es"
     },
-    {   title: "Project One", 
-        description: "Description for project one.",
+
+    {   title: "Project From ICE", 
+        description: "Proyecto para la gestión y control fallas de las subestaciones del ICE de Turrialba",
         imageUrl: "/projects/project00.png",
         projectLink: "https://www.google.com/?hl=es"
     },
-    {   title: "Project One", 
-        description: "Description for project one.",
+
+    {   title: "Book Puzzle", 
+        description: "Aplicación de una tienda para la compra, venta y grstión de productos enfocados en libros.",
         imageUrl: "/projects/project00.png",
         projectLink: "https://www.google.com/?hl=es"
     },
-    {   title: "Project One", 
-        description: "Description for project one.",
+    {   title: "Tienda", 
+        description: "Tienda desa",
         imageUrl: "/projects/project00.png",
         projectLink: "https://www.google.com/?hl=es"
     }
-
 ]
 export default function ProjectSection() {
 
     return (
         <>
 
-            <section className={styles.container}>
+            <section className={styles.container} id="projects">
                 <h2>Some of my Projects</h2>
                 <div className={styles.cardContainer}>
 
@@ -55,7 +56,7 @@ export default function ProjectSection() {
                                 <p>{project.description}</p>
                             </div>
                             <div className={styles.cardBtn}>
-                                <Link href={project.projectLink}>Ver Más</Link>
+                                <Link href={project.projectLink}>View More</Link>
                             </div>
                         </div>
                     ))}

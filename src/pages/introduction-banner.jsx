@@ -45,7 +45,7 @@ export default function IntroductionBanner() {
 
                     <div className={styles.heroOptions}>
                         <button className={styles.heroBtnResume}>
-                            <FileText /> <span>Resumé</span>
+                            <FileText /> <span>Resume</span>
                         </button>
 
                         <button className={styles.heroBtnLinked}>

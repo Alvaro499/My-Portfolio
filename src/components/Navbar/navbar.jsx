@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import styles from "./navbar.module.css"
 
-import { Menu, User, Phone, Telephone, Folder} from 'lucide-react';
+import { Menu, User, Phone, Briefcase, Folder, GraduationCap, Cpu} from 'lucide-react';
 
 export default function Navbar() {
     const [menuState, setMenuState] = useState(false);
@@ -16,23 +16,23 @@ export default function Navbar() {
     
                     <ul className={`${styles.navList} ${menuState ? styles.navListActive : ""}`}>
                         <li className={styles.menuLink} onClick={() => setMenuState(!menuState)}>
-                            <Link href="/"><Menu /><span>Menu</span></Link>
+                            <Link href=""><Menu /><span>Menu</span></Link>
                         </li>
 
                         <li>
-                            <Link href="/"><User /><span>Inicio</span></Link>
+                            <Link href="/"><User /><span>Me</span></Link>
                         </li>
                         <li>
-                            <Link href="/"><User /><span>Technologies</span></Link>
+                            <Link href="/#degrees"><GraduationCap /><span>Degrees</span></Link>
                         </li>
                         <li>
-                            <Link href="/"><Folder/><span>Projects</span></Link>
+                            <Link href="/#tech"><Cpu/><span>Technologies</span></Link>
                         </li>
                         <li>
-                            <Link href="/"><Folder/><span>Degrees</span></Link>
+                            <Link href="/#projects"><Briefcase/><span>Projects</span></Link>
                         </li>
                         <li>
-                            <Link href="/"><Phone /><span>Contact</span></Link>
+                            <Link href="/#contact"><Phone /><span>Contact</span></Link>
                         </li>
                     </ul>
                 </nav>

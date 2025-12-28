@@ -9,7 +9,7 @@ export default function EducationSection() {
     return (
 
         <>
-            <main className={styles.container}>
+            <main className={styles.container} id="degrees">
                 <h2>Education</h2>
 
                 <section className={styles.cardContainer}>

@@ -1,0 +1,152 @@
+.container {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+;
+}
+
+.container > h2 {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.infoCard {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  
+}
+
+
+.infoCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.infoCard p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.infoList {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.infoList a {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.formCard {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  background: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  width: min(320px, 100%);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 15px 30px;
+}
+
+.form__title {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form__inputs {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.form__label {
+  position: relative;
+}
+
+.form__input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #d7d0d0;
+  padding: 0.8em 1.2em;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.form__input:focus {
+  border-color: var(--primary-color);
+}
+
+.form__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(1rem, 0.9em);
+  background: #ffffff;
+  padding: 0 0.4rem;
+  font-size: 0.85rem;
+  color: #777;
+  pointer-events: none;
+  transition: transform 0.25s ease, font-size 0.25s ease;
+}
+
+.form__input:focus + .form__text,
+.form__input:not(:placeholder-shown) + .form__text {
+  transform: translate(1rem, -50%) scale(0.8);
+  font-size: 0.75rem;
+}
+
+.form__submit {
+  margin-top: 2rem;
+  padding: 0.9rem 2rem;
+  border-radius: 12px;
+    background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form__submit:hover {
+    background-color: var(--white-color);
+  color: var(--primary-color);
+
+  border: 1px solid var(--primary-color);
+}
+
+
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .infoCard,
+  .formCard {
+    flex: 1;
+  }
+
+  .form {
+ 
+  width: min(500px, 100%);
+
+}
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 5rem 8rem;
+  }
+}
