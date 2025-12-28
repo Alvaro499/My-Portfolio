@@ -10,8 +10,8 @@ import {
     User,
     Phone,
     Folder,
-    Github,    // Agregado
-    Linkedin,  // Agregado
+    Github, 
+    Linkedin,
     FileText
 } from 'lucide-react';
 
@@ -21,7 +21,7 @@ export default function IntroductionBanner() {
     return (
         <>
 
-            <main className={styles.container}>
+            <section className={styles.container}>
 
                 <div className={styles.profilePhoto}>
                     <Image
@@ -58,7 +58,7 @@ export default function IntroductionBanner() {
                     </div>
                 </div>
 
-            </main>
+            </section>
 
 
         </>

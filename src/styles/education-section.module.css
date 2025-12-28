@@ -11,7 +11,7 @@
 .container h2 {
     padding: 2rem 1rem 1rem 2rem;
     color: var(--font-white-color);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -73,7 +73,7 @@ justify-items: center;}
     transform: translate(-50%, -50%) rotate(-280deg);
     width: 160%;
     height: 130%;
-    background-image: conic-gradient(#fff 0deg, #fff 90deg, transparent 130deg, transparent 180deg, #4530FF 180deg, #4530FF 270deg, transparent 310deg, transparent 360deg);
+    background-image: conic-gradient(#fff 0deg, #fff 90deg, transparent 130deg, transparent 180deg, #5252e4 180deg, #5252e4 270deg, transparent 310deg, transparent 360deg);
     transition: transform 1s;
     z-index: -2;
 }
