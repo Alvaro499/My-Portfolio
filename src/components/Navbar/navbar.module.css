@@ -1,5 +1,4 @@
 .headerContainer {
-    height: 100%;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -9,7 +8,6 @@
     color: var(--font-white-color);
     position: relative;
 }
-
 
 .navList {
     width: 100vw;

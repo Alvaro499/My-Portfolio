@@ -17,6 +17,10 @@
   background-color: var(--background);
 }
 
+.globalContainer{
+  position: relative;
+}
+
 .main {
   display: flex;
   min-height: 100vh;
