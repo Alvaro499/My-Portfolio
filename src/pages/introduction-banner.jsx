@@ -10,7 +10,7 @@ import {
     User,
     Phone,
     Folder,
-    Github, 
+    Github,
     Linkedin,
     FileText
 } from 'lucide-react';
@@ -45,15 +45,36 @@ export default function IntroductionBanner() {
 
                     <div className={styles.heroOptions}>
                         <button className={styles.heroBtnResume}>
-                            <FileText /> <span>Resume</span>
+                            <a
+                                href="/others/resume-cv-alvaro-siles-quesada.pdf"
+                                download
+                                className={styles.heroBtnResume}
+                            >
+                                <FileText />
+                                <span>Resume</span>
+                            </a>
                         </button>
 
                         <button className={styles.heroBtnLinked}>
-                            <Linkedin /> <span>Linkedin</span>
+                            <a
+                                href="https://www.google.com/m?client=ms-android-samsung-gj-rev1&source=android-home"
+                                download
+                                className={styles.heroBtnLinked}
+                            >
+                                <Linkedin /> <span>Linkedin</span>
+                            </a>
+
                         </button>
 
                         <button className={styles.heroBtnGithub}>
-                            <Github /> <span>GitHub</span>
+                            <a
+                                href="https://www.google.com/m?client=ms-android-samsung-gj-rev1&source=android-home"
+                                download
+                                className={styles.heroBtnGithub}
+                            >
+                                <Github /> <span>GitHub</span>
+
+                            </a>
                         </button>
                     </div>
                 </div>
