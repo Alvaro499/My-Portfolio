@@ -6,6 +6,8 @@ import EducationSection from "@/pages/education-section.jsx";
 import TechSection from "@/pages//tech-section";
 import ProjectSection from "@/pages/project-section.jsx";
 import ContactSection from "./contact-section";
+import ModalForProjects from "@/components/ModalForProjects/modal-for-projects";
+
 
 import styles from "@/styles/Home.module.css";
 
@@ -19,11 +21,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-<IntroductionBanner id="home" />
-<EducationSection id="degrees" />
-<TechSection id="tech" />
-<ProjectSection id="projects" />
-<ContactSection id="contact" />
+      <body className={styles.globalContainer}>
+        <IntroductionBanner id="home" />
+        <EducationSection id="degrees" />
+        <TechSection id="tech" />
+        <ProjectSection id="projects" />
+        <ContactSection id="contact" />
+      </body>
 
 
     </>
