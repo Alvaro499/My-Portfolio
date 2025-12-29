@@ -76,7 +76,7 @@
 
 .modalImages {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
@@ -99,4 +99,5 @@
   color: white;
   border-radius: 6px;
   font-size: 0.9rem;
+  text-align: center;
 }

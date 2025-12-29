@@ -62,12 +62,18 @@
     color: var(--font-white-color);
     border-radius: 0.8rem;
     font-weight: bold;
+    
+    padding: 0.6em 1em;
+}
+
+.heroBtnResume, .heroBtnGithub, .heroBtnLinked > a{
+    width: 100%;
+    text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
-    padding: 0.6em 1em;
 }
 
 .heroGreet {
@@ -115,7 +121,7 @@
     .heroOptions>button {
         width: 100%;
         max-width: 150px;
-        padding: 0.5em 1em;
+        padding: 0.8em 1em;
 
     }
 
