@@ -1,6 +1,42 @@
 import styles from "@/styles/contact-section.module.css";
 
 export default function ContactSection() {
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    //It´ll read only inputs with an attribute "name"
+    const formData = new FormData(e.target);
+
+    //formData is reading the name attributes to create the "data object"
+    const data = {
+      name: formData.get("name"),
+      subject: formData.get("subject"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+
+    //We hit the APIRest endpoint from NextJS Server
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      alert("Message sent!");
+      e.target.reset();
+    } else {
+      alert("Error sending message");
+    }
+  };
+
+
+
+
+
   return (
     <section className={styles.container} id="contact">
       <h2>Contact</h2>
@@ -27,7 +63,7 @@ export default function ContactSection() {
           </ul>
         </div>
 
-        <div className={styles.formCard}>
+        {/* <div className={styles.formCard} >
           <form className={styles.form} >
             <h4 className={styles.form__title}>Contact Form</h4>
 
@@ -35,25 +71,39 @@ export default function ContactSection() {
               <label className={styles.form__label}>
                 <input
                   type="text"
+                  name="name"
                   className={styles.form__input}
                   placeholder=" "
                   required
                 />
-                <span className={styles.form__text}>Full name</span>
+                <span className={styles.form__text}>Name:</span>
+              </label>
+
+              <label className={styles.form__label}>
+                <input
+                  type="text"
+                  name="subject"
+                  className={styles.form__input}
+                  placeholder=" "
+                  required
+                />
+                <span className={styles.form__text}>Subject:</span>
               </label>
 
               <label className={styles.form__label}>
                 <input
                   type="email"
+                  name="email"
                   className={styles.form__input}
                   placeholder=" "
                   required
                 />
-                <span className={styles.form__text}>Email address</span>
+                <span className={styles.form__text}>Email address:</span>
               </label>
 
               <label className={styles.form__label}>
                 <textarea
+                  name="message"
                   className={styles.form__input}
                   placeholder=" "
                   rows={4}
@@ -70,7 +120,7 @@ export default function ContactSection() {
             />
           </form>
 
-        </div>
+        </div> */}
       </div>
     </section>
 
