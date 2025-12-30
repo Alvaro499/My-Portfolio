@@ -11,7 +11,6 @@ const myProjects = [
     longDescription:
       "This project was developed as a graduation project for the Web Design and Development technician program. The goal was to create a digital solution for the accounting company GAPA to manage client appointments more efficiently, replacing manual scheduling processes with an organized and automated system.",
     featureImages: [
-
       {
         title: "Appointments Dashboard",
         image: "/projects/gapa/front-page-img.jpg",
@@ -51,21 +50,6 @@ const myProjects = [
     repoLink: "https://github.com/Alvaro499/Sistema-de-Reserva-de-Citas.git",
     projectLink: "https://www.google.com/?hl=es",
   },
-
-
-  {
-    title: "Komodo",
-    description:
-      "Página Personal para una empresa o negocio pequeño y/o mediano, donde pueda vender y mostrar sus productos, con un estilo y diseño moderno. Que además incluye un sistema de carrito de compras, galeria, descarga de imagenes entre otras funcionalidades",
-    longDescription:
-      "Página web para la promoción y venta de productos desarrollada con HTML, CSS y JavaScript puro. Incluye carrito de compras y navegación entre páginas.",
-    imageUrl: "/projects/project00.png",
-    images: ["/projects/project00.png", "/projects/project00.png", "/projects/project00.png"],
-    technologies: ["HTML", "CSS", "JavaScript"],
-    demoLink: "https://www.google.com/?hl=es",
-    repoLink: "https://www.google.com/?hl=es",
-    projectLink: "https://www.google.com/?hl=es",
-  },
   {
     title: "Project From ICE",
     description:
@@ -79,6 +63,57 @@ const myProjects = [
     repoLink: "https://www.google.com/?hl=es",
     projectLink: "https://www.google.com/?hl=es",
   },
+  {
+    title: "Komodo",
+    description:
+      "Personal web project developed to improve JavaScript fundamentals and HTML-CSS skills and techniques, featuring a product catalog, shopping cart, and order request flow.",
+    longDescription:
+      "Komodo is a personal frontend project created to strengthen my skills in HTML, CSS, and JavaScript. The website is about a small business product page, including sections such as home, product catalog, shopping cart, and a contact/order form. Users can browse products, add them to a cart, and submit an order request, but no payment gateway or real transaction processing is implemented. The project focuses on DOM manipulation, basic state handling, UI interactions, and responsive design.",
+    featureImages: [
+      {
+        title: "Product Gallery",
+        image: "/projects/komodo/product-gallery.jpg",
+      },
+      {
+        title: "Product Review",
+        image: "/projects/komodo/product-review.jpg",
+      },
+      {
+        title: "Shopping Cart",
+        image: "/projects/komodo/shopping-cart.jpg",
+      },
+      {
+        title: "Functional Shopping Cart",
+        image: "/projects/komodo/functional-shopping-cart.jpg",
+      },
+      {
+        title: "Checkout Form",
+        image: "/projects/komodo/checkout-form.jpg",
+      },
+      {
+        title: "Order Summary Email",
+        image: "/projects/komodo/order-summary-email.jpg",
+      },
+      {
+        title: "Search System",
+        image: "/projects/komodo/searcher.jpg",
+      },
+      {
+        title: "Email Handling",
+        image: "/projects/komodo/email-handling.jpg",
+      },
+      {
+        title: "Responsive Design",
+        image: "/projects/komodo/responsive.jpg",
+      },
+    ],
+    imageUrl: "/projects/komodo/komodo-front-page.jpg",
+    technologies: ["HTML", "CSS", "JavaScript", "PHP", "PHPMailer"],
+    demoLink: "https://www.google.com/?hl=es",
+    repoLink: "https://github.com/Alvaro499/komodo.git",
+    projectLink: "https://www.google.com/?hl=es",
+  }
+
 ];
 
 export default function ProjectSection() {

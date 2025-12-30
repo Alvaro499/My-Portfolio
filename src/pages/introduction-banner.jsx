@@ -57,9 +57,9 @@ export default function IntroductionBanner() {
 
                         <button className={styles.heroBtnLinked}>
                             <a
-                                href="https://www.google.com/m?client=ms-android-samsung-gj-rev1&source=android-home"
-                                download
+                                href="linkedin.com/in/alvaro-siles-quesada-731a8b217"
                                 className={styles.heroBtnLinked}
+                                target="_blank"
                             >
                                 <Linkedin /> <span>Linkedin</span>
                             </a>
@@ -68,9 +68,9 @@ export default function IntroductionBanner() {
 
                         <button className={styles.heroBtnGithub}>
                             <a
-                                href="https://www.google.com/m?client=ms-android-samsung-gj-rev1&source=android-home"
-                                download
+                                href="https://github.com/Alvaro499"
                                 className={styles.heroBtnGithub}
+                                target="_blank"
                             >
                                 <Github /> <span>GitHub</span>
 
