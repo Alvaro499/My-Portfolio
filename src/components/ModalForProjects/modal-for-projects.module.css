@@ -66,23 +66,43 @@
   margin-top: 0.5rem;
 }
 
-.techSection li {
-  list-style: none;
-  background: #eee;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
+.featureTitle {
+  position: relative;
+  padding-left: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
-.modalImages {
+.featureTitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  background: black;
+  border-radius: 50%;
+}
+
+.modalImagesContainer {
   display: grid;
   grid-template-columns: repeat(1, minmax(200px, 1fr));
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.modalImages img {
+.modalImagesContainer span {
+  font-weight: bold;
+
+}
+
+.modalImage{
   width: 100%;
+}
+
+.modalImagesContainer img {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -100,4 +120,12 @@
   border-radius: 6px;
   font-size: 0.9rem;
   text-align: center;
+}
+
+
+@media (min-width: 768px) {
+.featureTitle {
+  font-size: 1rem;
+
+}
 }
