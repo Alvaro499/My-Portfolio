@@ -5,26 +5,62 @@ import styles from "@/styles/project-section.module.css";
 
 const myProjects = [
   {
-    title: "GAPA Reservations Appointements",
+    title: "GAPA Appointment Reservation System",
     description:
-      "Sistema de gestión de citas para la empresa de Contabilidad GAPA.",
+      "Web system for managing client appointments for the accounting company GAPA.",
     longDescription:
-      "Sistema de gestión de citas para la empresa de Contabilidad GAPA. Los usuarios pueden registrarse, solicitar reuniones, recibir notificaciones por correo y administrar su historial de citas.",
-    imageUrl: "/projects/project00.png",
-    images: ["/projects/project00.png", "/projects/project00.png"],
-    technologies: ["React", "Next.js", "CSS Modules"],
+      "This project was developed as a graduation project for the Web Design and Development technician program. The goal was to create a digital solution for the accounting company GAPA to manage client appointments more efficiently, replacing manual scheduling processes with an organized and automated system.",
+    featureImages: [
+
+      {
+        title: "Appointments Dashboard",
+        image: "/projects/gapa/front-page-img.jpg",
+      },
+      {
+        title: "Login",
+        image: "/projects/gapa/login.jpg",
+      },
+      {
+        title: "Password Recovery",
+        image: "/projects/gapa/pass-recovery.jpg",
+      },
+      {
+        title: "User Registration (Employess or Clients)",
+        image: "/projects/gapa/user-register-success.jpg",
+      },
+      {
+        title: "Appointment Reservation System",
+        image: "/projects/gapa/list-of-appointments.jpg",
+      },
+      {
+        title: "Notification System",
+        image: "/projects/gapa/notification-system.jpg",
+      },
+      {
+        title: "Mass Email Sending",
+        image: "/projects/gapa/spam-emails.jpg",
+      },
+      {
+        title: "Personal Information Overview",
+        image: "/projects/gapa/user-info.jpg",
+      }
+    ],
+    imageUrl: "/projects/gapa/front-page-img.jpg",
+    technologies: ["HTML", "CSS", "JavaScript", "PHP"],
     demoLink: "https://www.google.com/?hl=es",
-    repoLink: "https://www.google.com/?hl=es",
+    repoLink: "https://github.com/Alvaro499/Sistema-de-Reserva-de-Citas.git",
     projectLink: "https://www.google.com/?hl=es",
   },
+
+
   {
     title: "Komodo",
     description:
-      "Komodo Page, página para la promoción y venta de productos.",
+      "Página Personal para una empresa o negocio pequeño y/o mediano, donde pueda vender y mostrar sus productos, con un estilo y diseño moderno. Que además incluye un sistema de carrito de compras, galeria, descarga de imagenes entre otras funcionalidades",
     longDescription:
       "Página web para la promoción y venta de productos desarrollada con HTML, CSS y JavaScript puro. Incluye carrito de compras y navegación entre páginas.",
     imageUrl: "/projects/project00.png",
-    images: ["/projects/project00.png","/projects/project00.png","/projects/project00.png"],
+    images: ["/projects/project00.png", "/projects/project00.png", "/projects/project00.png"],
     technologies: ["HTML", "CSS", "JavaScript"],
     demoLink: "https://www.google.com/?hl=es",
     repoLink: "https://www.google.com/?hl=es",

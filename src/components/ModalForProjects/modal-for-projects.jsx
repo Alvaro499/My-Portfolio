@@ -8,7 +8,7 @@ export default function ModalForProjects({ isOpen = false, onClose = () => { }, 
         title,
         longDescription,
         technologies = [],
-        images = [],
+        featureImages = [],
         demoLink,
         repoLink,
     } = project;
@@ -35,7 +35,7 @@ export default function ModalForProjects({ isOpen = false, onClose = () => { }, 
                     <p className={styles.description}>{longDescription}</p>
 
                     <div className={styles.techSection}>
-                        <span>Technologies used</span>
+                        <span>Technologies used:</span>
                         <ul>
                             {technologies.map((tech, index) => (
                                 <li key={index}>{tech}</li>
@@ -44,9 +44,17 @@ export default function ModalForProjects({ isOpen = false, onClose = () => { }, 
                     </div>
                 </div>
 
-                <div className={styles.modalImages}>
-                    {images.map((img, index) => (
-                        <img key={index} src={img} alt={`${title} screenshot ${index + 1}`} />
+                <div className={styles.modalImagesContainer}>
+                    <span>Features:</span>
+
+                    {featureImages.map((item, index) => (
+                        <div className={styles.modalImage} key={index}>
+                            <p className={styles.featureTitle}>{item.title}</p>
+                            <img
+                                src={item.image}
+                                alt={`${title} - ${item.title}`}
+                            />
+                        </div>
                     ))}
                 </div>
 
