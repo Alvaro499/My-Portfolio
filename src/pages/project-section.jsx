@@ -1,6 +1,8 @@
 import { useState } from "react";
 import ModalForProjects from "@/components/ModalForProjects/modal-for-projects";
 import Link from "next/link";
+import Image from "next/image";
+
 import styles from "@/styles/project-section.module.css";
 
 const myProjects = [
@@ -114,63 +116,63 @@ const myProjects = [
     projectLink: "https://www.google.com/?hl=es",
   },
   {
-  title: "Maze of Books – Inventory Management System",
-  description:
-    "Group project developed in Java to manage a bookstore inventory, suppliers, orders, and users.",
-  longDescription:
-    "Maze of Books is a group project developed for the course Data Structures and Algorithms. The system was built using Java and JavaFX, with interfaces designed in SceneBuilder. It is a desktop application focused on managing a bookstore inventory using data structures concepts. The system is divided into three modules, where the administrator module includes full management features such as products, suppliers, orders, reports, and demand forecasting. Data is stored and managed using JSON files instead of a traditional database.",
-  featureImages: [
-    {
-      title: "Admin Module Dashboard",
-      image: "/projects/maze-of-books/admin-module.jpg",
-    },
-    {
-      title: "Product Management",
-      image: "/projects/maze-of-books/product-management.jpg",
-    },
-    {
-      title: "Inventory Control",
-      image: "/projects/maze-of-books/inventory-control.jpg",
-    },
-    {
-      title: "Supplier Management",
-      image: "/projects/maze-of-books/supplier-management.jpg",
-    },
-    {
-      title: "Customer Management",
-      image: "/projects/maze-of-books/customer-management.jpg",
-    },
-    {
-      title: "Order Management",
-      image: "/projects/maze-of-books/order-management.jpg",
-    },
-    {
-      title: "Demand Forecasting",
-      image: "/projects/maze-of-books/demand-forecasting.jpg",
-    },
-    {
-      title: "Reports Module",
-      image: "/projects/maze-of-books/reports.jpg",
-    },
-        {
-      title: "Customer Module - Shopping Cart",
-      image: "/projects/maze-of-books/shopping-cart.jpg",
-    },
-    {
-      title: "Read-Only Module",
-      image: "/projects/maze-of-books/read-only module.jpg",
-    },
-  ],
-  imageUrl: "/projects/maze-of-books/admin-module.jpg",
-  technologies: [
-    "Java",
-    "SceneBuilder",
-    "JSON",
-  ],
-  demoLink: "https://www.google.com/?hl=es",
-  repoLink: "https://github.com/Alvaro499/LaberintoLibros_2023.git",
-  projectLink: "https://www.google.com/?hl=es",
-}
+    title: "Maze of Books – Inventory Management System",
+    description:
+      "Group project developed in Java to manage a bookstore inventory, suppliers, orders, and users.",
+    longDescription:
+      "Maze of Books is a group project developed for the course Data Structures and Algorithms. The system was built using Java and JavaFX, with interfaces designed in SceneBuilder. It is a desktop application focused on managing a bookstore inventory using data structures concepts. The system is divided into three modules, where the administrator module includes full management features such as products, suppliers, orders, reports, and demand forecasting. Data is stored and managed using JSON files instead of a traditional database.",
+    featureImages: [
+      {
+        title: "Admin Module Dashboard",
+        image: "/projects/maze-of-books/admin-module.jpg",
+      },
+      {
+        title: "Product Management",
+        image: "/projects/maze-of-books/product-management.jpg",
+      },
+      {
+        title: "Inventory Control",
+        image: "/projects/maze-of-books/inventory-control.jpg",
+      },
+      {
+        title: "Supplier Management",
+        image: "/projects/maze-of-books/supplier-management.jpg",
+      },
+      {
+        title: "Customer Management",
+        image: "/projects/maze-of-books/customer-management.jpg",
+      },
+      {
+        title: "Order Management",
+        image: "/projects/maze-of-books/order-management.jpg",
+      },
+      {
+        title: "Demand Forecasting",
+        image: "/projects/maze-of-books/demand-forecasting.jpg",
+      },
+      {
+        title: "Reports Module",
+        image: "/projects/maze-of-books/reports.jpg",
+      },
+      {
+        title: "Customer Module - Shopping Cart",
+        image: "/projects/maze-of-books/shopping-cart.jpg",
+      },
+      {
+        title: "Read-Only Module",
+        image: "/projects/maze-of-books/read-only module.jpg",
+      },
+    ],
+    imageUrl: "/projects/maze-of-books/admin-module.jpg",
+    technologies: [
+      "Java",
+      "SceneBuilder",
+      "JSON",
+    ],
+    demoLink: "https://www.google.com/?hl=es",
+    repoLink: "https://github.com/Alvaro499/LaberintoLibros_2023.git",
+    projectLink: "https://www.google.com/?hl=es",
+  }
 
 
 ];
@@ -198,7 +200,13 @@ export default function ProjectSection() {
           {myProjects.map((project, index) => (
             <div className={styles.card} key={index}>
               <div className={styles.cardImage}>
-                <img src={project.imageUrl} alt={project.title} />
+                <Image
+                  src={project.imageUrl}
+                  alt={project.title}
+                  width={600}
+                  height={400}
+                  priority
+                ></Image>
               </div>
 
               <div className={styles.cardTitle}>
