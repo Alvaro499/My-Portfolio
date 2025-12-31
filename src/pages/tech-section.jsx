@@ -14,17 +14,23 @@ const technologies = [
   { name: "PHP", icon: "php.svg", color: "#777BB4" },
   { name: "Python", icon: "python.svg", color: "#3776AB" },
   { name: "WordPress", icon: "wordpress.svg", color: "#21759B" },
-  {name: "C#", icon: "csharp.svg", color: "#239120" },
-  {name: "SQL", icon: "sql.svg", color: "#4479A1" },
-  {name: "Linux", icon: "linux.svg", color: "#FCC624" },
-  {name: "ASP.NET", icon: "asp-net.svg", color: "#512BD4" },
+  { name: "C#", icon: "csharp.svg", color: "#239120" },
+  { name: "SQL", icon: "sql.svg", color: "#4479A1" },
+  { name: "Linux", icon: "linux.svg", color: "#FCC624" },
+  { name: "ASP.NET", icon: "asp-net.svg", color: "#512BD4" },
+  { name: "MySQL", icon: "mysql.svg", color: "#512BD4" },
+  { name: "SQLServer", icon: "sql-server.svg", color: "#512BD4" },
+  { name: "MongoDB", icon: "mongodb.svg", color: "#512BD4" }
+
+
+
 ];
 
 export default function TechSection() {
   return (
     <main className={styles.container} id="tech">
       <div className={styles.containerContainer}>
-        <h2>Technologies I’ve Used in My Studies</h2>
+        <h2>Technologies & Tools I’ve Used</h2>
         <div className={styles.cardContainer}>
           {technologies.map((tech) => (
             <div key={tech.name} className={styles.card}>
