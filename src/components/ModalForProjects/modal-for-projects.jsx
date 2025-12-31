@@ -1,5 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./modal-for-projects.module.css";
+
+
 
 export default function ModalForProjects({ isOpen = false, onClose = () => { }, project = null }) {
     if (!isOpen || !project) return null;
@@ -50,9 +53,12 @@ export default function ModalForProjects({ isOpen = false, onClose = () => { }, 
                     {featureImages.map((item, index) => (
                         <div className={styles.modalImage} key={index}>
                             <p className={styles.featureTitle}>{item.title}</p>
-                            <img
+                            <Image
                                 src={item.image}
                                 alt={`${title} - ${item.title}`}
+                                width={800}
+                                height={500}
+                                loading="lazy"
                             />
                         </div>
                     ))}

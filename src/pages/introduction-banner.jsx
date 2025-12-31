@@ -29,6 +29,7 @@ export default function IntroductionBanner() {
                         alt="Profile Photo"
                         width={600}
                         height={400}
+                        priority
                     ></Image>
 
                 </div>
