@@ -54,11 +54,11 @@ export default function ContactSection() {
             <li><strong>Phone:</strong> +506 6288 9872</li>
             <li>
               <strong>LinkedIn:</strong>{" "}
-              <a href="linkedin.com/in/alvaro-siles-quesada-731a8b217">Direct URL</a>
+              <a href="linkedin.com/in/alvaro-siles-quesada-731a8b217" target="_blank">Direct URL</a>
             </li>
             <li>
               <strong>GitHub:</strong>{" "}
-              <a href="https://github.com/Alvaro499">Direct Link</a>
+              <a href="https://github.com/Alvaro499" target="_blank">Direct Link</a>
             </li>
           </ul>
         </div>
