@@ -53,17 +53,32 @@ const myProjects = [
     projectLink: "https://www.google.com/?hl=es",
   },
   {
-    title: "Project From ICE",
+    title: "ICE Fault Management System",
     description:
-      "Proyecto para la gestión y control de fallas.",
+      "Group project for managing and tracking faults in ICE substations, focusing on technical and supervisory reporting.",
     longDescription:
-      "Sistema interno para el control y seguimiento de fallas en subestaciones del ICE de Turrialba.Sistema interno para el control y seguimiento de fallas en subestaciones del ICE de Turrialba. Sistema interno para el control y seguimiento de fallas en subestaciones del ICE de Turrialba. Sistema interno para el control y seguimiento de fallas en subestaciones del ICE de Turrialba. Sistema interno para el control y seguimiento de fallas en subestaciones del ICE de Turrialba. Sistema interno para el control y seguimiento de fallas en subestaciones del ICE de Turrialba.Sistema interno para el control y seguimiento de fallas en subestaciones del ICE de Turrialba.Sistema interno para el control y seguimiento de fallas en subestaciones del ICE de Turrialba.Sistema interno para el control y seguimiento de fallas en subestaciones del ICE de Turrialba.Sistema interno para el control y seguimiento de fallas en subestaciones del ICE de Turrialba.Sistema interno para el control y seguimiento de fallas en subestaciones del ICE de Turrialba.Sistema interno para el control y seguimiento de fallas en subestaciones del ICE de Turrialba.",
-    imageUrl: "/projects/project00.png",
-    images: ["/projects/project00.png"],
-    technologies: ["Java", "Spring Boot", "PostgreSQL"],
+      "This was a group project developed to manage and track faults in ICE substations. Our work included collecting requirements, visiting substations, and communicating with ICE workers. The project was built using Angular, C#, ASP.NET, SQL Server, HTML, CSS, TypeScript, and Bootstrap. We followed a multi-layer architecture inspired by Clean Architecture principles, separating business rules, data access, and presentation. The goal was to organize the project structure clearly, maintain code quality, and implement rules to manage reports and users efficiently.",
+    
+      featureImages: [
+      { title: "Admin Module", image: "/projects/ice/admin-module.jpg" },
+      { title: "Supervisor Module", image: "/projects/ice/supervisor-module.jpg" },
+      { title: "Protection Tech Report Editing Menu", image: "/projects/ice/protection-tech-report-editing-menu.jpg" },
+      { title: "Protection Tech Report Editing", image: "/projects/ice/protection-tech-report-editing.jpg" },
+      { title: "Protection Tech Report Overview", image: "/projects/ice/protection-tech-report-overview.jpg" },
+      { title: "Operators Consultation", image: "/projects/ice/operators-consultation.jpg" },
+      { title: "Entities Relation", image: "/projects/ice/entities-relation.jpg" },
+      { title: "Regional Unit Consultation", image: "/projects/ice/regional-unit-consultation.jpg" },
+      { title: "Add Regional Unit", image: "/projects/ice/add-regional-unit.jpg" },
+      { title: "Supervisor Module - Watch Reports", image: "/projects/ice/supervisor-watch-reports.jpg" },
+      { title: "Technician Lines Module", image: "/projects/ice/technician-lines.jpg" },
+      { title: "Technician Lines Module Editing", image: "/projects/ice/technician-lines-editing.jpg" }
+    ],
+    imageUrl: "/projects/ice/admin-module.jpg",
+    images: ["/projects/ice/admin-module.jpg"],
+    technologies: ["Angular", "C#", "ASP.NET", "SQL Server", "HTML", "CSS", "TypeScript", "Bootstrap"],
     demoLink: "https://www.google.com/?hl=es",
     repoLink: "https://www.google.com/?hl=es",
-    projectLink: "https://www.google.com/?hl=es",
+    projectLink: "https://www.google.com/?hl=es"
   },
   {
     title: "Komodo",
