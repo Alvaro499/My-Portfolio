@@ -47,7 +47,7 @@ const myProjects = [
       }
     ],
     imageUrl: "/projects/gapa/front-page-img.jpg",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Xampp"],
     demoLink: "https://www.google.com/?hl=es",
     repoLink: "https://github.com/Alvaro499/Sistema-de-Reserva-de-Citas.git",
     projectLink: "https://www.google.com/?hl=es",

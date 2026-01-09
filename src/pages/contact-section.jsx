@@ -1,6 +1,9 @@
+import { useState } from "react";
 import styles from "@/styles/contact-section.module.css";
+import Alert from "@/components/Alerts/AlertForPortfolio";
 
 export default function ContactSection() {
+  const [alert, setAlert] = useState({ type: "", message: "" });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,10 +29,10 @@ export default function ContactSection() {
     });
 
     if (res.ok) {
-      alert("Message sent!");
+      setAlert({ type: "success", message: "Message sent successfully!" });
       e.target.reset();
     } else {
-      alert("Error sending message");
+      setAlert({ type: "error", message: "Error sending message. Please try again." });
     }
   };
 
@@ -43,7 +46,7 @@ export default function ContactSection() {
 
       <div className={styles.content}>
         <div className={styles.infoCard}>
-          <h3>Let’s talk</h3>
+          <h3>Contact Information</h3>
           <p>
             You can reach me through the following channels:
           </p>
@@ -67,6 +70,12 @@ export default function ContactSection() {
         <div className={styles.formCard} >
           <form className={styles.form} onSubmit={handleSubmit}>
             <h4 className={styles.formTitle}>Contact Form</h4>
+
+            <Alert 
+              type={alert.type} 
+              message={alert.message} 
+              onClose={() => setAlert({ type: "", message: "" })}
+            />
 
             <div className={styles.formInputs}>
               <label className={styles.formLabel}>
