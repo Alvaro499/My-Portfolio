@@ -1,7 +1,6 @@
 .container {
   min-height: auto;
   padding: 4rem 2rem;
-;
 }
 
 .container > h2 {
@@ -61,23 +60,23 @@
   box-shadow: rgba(0, 0, 0, 0.12) 0px 15px 30px;
 }
 
-.form__title {
+.formTitle {
   font-size: 1.2rem;
   color: var(--secondary-color);
   margin-bottom: 2rem;
   text-align: center;
 }
 
-.form__inputs {
+.formInputs {
   display: grid;
   gap: 1.6rem;
 }
 
-.form__label {
+.formLabel {
   position: relative;
 }
 
-.form__input {
+.formInput {
   width: 100%;
   border-radius: 8px;
   border: 1px solid #d7d0d0;
@@ -86,30 +85,32 @@
   outline: none;
 }
 
-.form__input:focus {
+.formInput:focus {
   border-color: var(--primary-color);
 }
 
-.form__text {
-  position: static;
-  top: 0;
-  left: 0;
-  transform: none;
+.formText {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
   background: #ffffff;
   padding: 0 0.4rem;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: #777;
   pointer-events: none;
-  transition: transform 0.25s ease, font-size 0.25s ease;
+  transition: all 0.25s ease;
 }
 
-/* .form__input:focus + .form__text,
-.form__input:not(:placeholder-shown) + .form__text {
-  transform: translate(1rem, -50%) scale(0.8);
+.formInput:focus + .formText,
+.formInput:not(:placeholder-shown) + .formText {
+  top: 0;
+  transform: translateY(-50%);
   font-size: 0.75rem;
-} */
+  color: var(--primary-color);
+}
 
-.form__submit {
+.formSubmit {
   margin-top: 2rem;
   padding: 0.9rem 2rem;
   border-radius: 12px;
@@ -120,7 +121,7 @@
   transition: background-color 0.3s ease;
 }
 
-.form__submit:hover {
+.formSubmit:hover {
     background-color: var(--white-color);
   color: var(--primary-color);
 
