@@ -45,13 +45,14 @@ export default function ContactSection() {
         <div className={styles.infoCard}>
           <h3>Let’s talk</h3>
           <p>
-            If you want to contact me for a project, collaboration or just to say hi,
-            you can do it through these channels.
+            You can reach me through the following channels:
           </p>
 
           <ul className={styles.infoList}>
-            <li><strong>Email:</strong> alvarosiles499@gmail.com</li>
-            <li><strong>Phone:</strong> +506 6288 9872</li>
+            <li><strong>Email:</strong> <a href="mailto:alvarosiles499@gmail.com">
+  alvarosiles499@gmail.com
+</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+50662889872">+506 6288 9872</a></li>
             <li>
               <strong>LinkedIn:</strong>{" "}
               <a href="linkedin.com/in/alvaro-siles-quesada-731a8b217" target="_blank">Direct URL</a>
@@ -63,64 +64,64 @@ export default function ContactSection() {
           </ul>
         </div>
 
-        {/* <div className={styles.formCard} >
-          <form className={styles.form} >
-            <h4 className={styles.form__title}>Contact Form</h4>
+        <div className={styles.formCard} >
+          <form className={styles.form} onSubmit={handleSubmit}>
+            <h4 className={styles.formTitle}>Contact Form</h4>
 
-            <div className={styles.form__inputs}>
-              <label className={styles.form__label}>
+            <div className={styles.formInputs}>
+              <label className={styles.formLabel}>
                 <input
                   type="text"
                   name="name"
-                  className={styles.form__input}
+                  className={styles.formInput}
                   placeholder=" "
                   required
                 />
-                <span className={styles.form__text}>Name:</span>
+                <span className={styles.formText}>Name:</span>
               </label>
 
-              <label className={styles.form__label}>
+              <label className={styles.formLabel}>
                 <input
                   type="text"
                   name="subject"
-                  className={styles.form__input}
+                  className={styles.formInput}
                   placeholder=" "
                   required
                 />
-                <span className={styles.form__text}>Subject:</span>
+                <span className={styles.formText}>Subject:</span>
               </label>
 
-              <label className={styles.form__label}>
+              <label className={styles.formLabel}>
                 <input
                   type="email"
                   name="email"
-                  className={styles.form__input}
+                  className={styles.formInput}
                   placeholder=" "
                   required
                 />
-                <span className={styles.form__text}>Email address:</span>
+                <span className={styles.formText}>Email address:</span>
               </label>
 
-              <label className={styles.form__label}>
+              <label className={styles.formLabel}>
                 <textarea
                   name="message"
-                  className={styles.form__input}
+                  className={styles.formInput}
                   placeholder=" "
                   rows={4}
                   required
                 ></textarea>
-                <span className={styles.form__text}>Your message</span>
+                <span className={styles.formText}>Your message</span>
               </label>
             </div>
 
             <input
               type="submit"
               value="Send message"
-              className={styles.form__submit}
+              className={styles.formSubmit}
             />
           </form>
 
-        </div> */}
+        </div>
       </div>
     </section>
 

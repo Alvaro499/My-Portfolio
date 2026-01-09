@@ -10,9 +10,11 @@ export default function Navbar() {
      const navbarRef = useRef(null);
      
     useEffect(() => {
+        // Solo agregar el listener si el menú está abierto
+        if (!menuState) return;
+
         function handleClickOutside(event) {
             if (
-                menuState &&
                 navbarRef.current &&
                 !navbarRef.current.contains(event.target)
             ) {

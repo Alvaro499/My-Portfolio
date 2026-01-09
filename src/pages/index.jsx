@@ -21,13 +21,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className={styles.globalContainer}>
+      <div className={styles.globalContainer}>
         <IntroductionBanner id="home" />
         <EducationSection id="degrees" />
         <TechSection id="tech" />
         <ProjectSection id="projects" />
         <ContactSection id="contact" />
-      </body>
+      </div>
 
 
     </>

@@ -19,21 +19,21 @@ export default function EducationSection() {
 
                         <div className={styles.cardHeader}>
                             <h4 className={styles.cardTitle}>
-                                Bachelor of Science in Computer Science
+                                Bachelor’s Degree in Business Informatics
                             </h4>
 
-                            <ul className={styles.cardTitleEquivalents}>
+                            {/* <ul className={styles.cardTitleEquivalents}>
                                 <li>Bachelor of Science</li>
                                 <li>Bachelor of Science</li>
-                            </ul>
+                            </ul> */}
                         </div>
 
                         <div className={styles.cardBody}>
                             <p className={styles.cardInstitution}>
-                                University of Technology
+                                University of Costa Rica (UCR)
                             </p>
                             <p className={styles.cardDuration}>
-                                2015 - 2019
+                                2022 - 2026 (Expected)
                             </p>
                         </div>
 
@@ -48,7 +48,7 @@ export default function EducationSection() {
 
                         <div className={styles.cardHeader}>
                             <h4 className={styles.cardTitle}>
-                                Technician in Design and Development Web
+                                Web Design and Development Technician
                             </h4>
 
                             <ul className={styles.cardTitleEquivalents}>
@@ -60,12 +60,12 @@ export default function EducationSection() {
                                 Instituto Nacional de Aprendizaje (INA)
                             </p>
                             <p className={styles.cardDuration}>
-                                201 - 2019
+                                2021 - 2022
                             </p>
                         </div>
 
                         <div className={styles.cardFooter}>
-                            <span>In Progress</span>
+                            <span>Completed</span>
                         </div>
 
                     </div>

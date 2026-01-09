@@ -53,6 +53,114 @@ const myProjects = [
     projectLink: "https://www.google.com/?hl=es",
   },
   {
+  title: "PyME Management Platform and Ecommerce – Microservices Architecture",
+  description:
+    "Group web project focused on building a real system using microservices architecture.",
+  longDescription:
+    "This is a group project developed for the Software Engineering course. The main goal was to simulate a real-world system by working as a team and using microservices architecture. The platform allows PyMEs to manage products, stock, promotions, orders, and user access. Each main feature was developed as an independent microservice to improve organization and scalability. The project also focused on using documentation, defining system rules, and following good practices similar to those used in real software projects.",
+  featureImages: [
+    {
+      title: "Microservices Architecture Diagram",
+      image: "/projects/pyme/microservices-diagram.jpg",
+    },
+    {
+      title: "Main Public Landing Page",
+      image: "/projects/pyme/principal-page-free-module.jpg",
+    },
+    {
+      title: "User Registration for PyMEs",
+      image: "/projects/pyme/pyme-register.jpg",
+    },
+    {
+      title: "Login Options and Authentication Flow",
+      image: "/projects/pyme/login-options.jpg",
+    },
+    {
+      title: "Password Recovery Request",
+      image: "/projects/pyme/pass-recovery.jpg",
+    },
+    {
+      title: "Password Recovery Initialization",
+      image: "/projects/pyme/password-recovery-init.jpg",
+    },
+    {
+      title: "Password Recovery Email",
+      image: "/projects/pyme/pass-recovery-email.jpg",
+    },
+    {
+      title: "Email Verification Code",
+      image: "/projects/pyme/pyme-verification-code.jpg",
+    },
+    {
+      title: "Email Confirmation for PyME Account",
+      image: "/projects/pyme/pyme-email-code.jpg",
+    },
+    {
+      title: "PyME Admin Dashboard",
+      image: "/projects/pyme/pyme-admin-module.jpg",
+    },
+    {
+      title: "Product Management Module",
+      image: "/projects/pyme/pyme-module-products.jpg",
+    },
+    {
+      title: "Product Creation and Editing Form",
+      image: "/projects/pyme/pyme-module-products-form.jpg",
+    },
+    {
+      title: "Product Stock Management",
+      image: "/projects/pyme/pyme-module-products-stock.jpg",
+    },
+    {
+      title: "Promotions Management",
+      image: "/projects/pyme/pyme-module-products-promo.jpg",
+    },
+    {
+      title: "Product Search System",
+      image: "/projects/pyme/product-search.jpg",
+    },
+    {
+      title: "Advanced Product Search Filters",
+      image: "/projects/pyme/advanced-product-search.jpg",
+    },
+    {
+      title: "Shopping Cart",
+      image: "/projects/pyme/cart.jpg",
+    },
+    {
+      title: "Checkout Form",
+      image: "/projects/pyme/checkout-form.jpg",
+    },
+    {
+      title: "Order Detail Confirmation Email",
+      image: "/projects/pyme/order-detail-email-1.jpg",
+    },
+    {
+      title: "Order Status Update Email",
+      image: "/projects/pyme/order-detail-email-2.jpg",
+    },
+  ],
+  imageUrl: "/projects/pyme/principal-page-free-module.jpg",
+  technologies: [
+    "Java",
+    "Spring Boot",
+    "JPA / Hibernate",
+    "PostgreSQL",
+    "React",
+    "TypeScript",
+    "HTML",
+    "CSS",
+    "Eureka",
+    "Kafka",
+    "Bootstrap",
+    "Microservices Architecture",
+    "REST APIs",
+  ],
+  demoLink: "https://www.google.com/?hl=es",
+  repoLink: "https://www.google.com/?hl=es",
+  projectLink: "https://www.google.com/?hl=es",
+},
+  {
     title: "ICE Fault Management System",
     description:
       "Group project for managing and tracking faults in ICE substations, focusing on technical and supervisory reporting.",
