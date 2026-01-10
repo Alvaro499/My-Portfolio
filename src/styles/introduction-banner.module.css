@@ -1,11 +1,12 @@
 .container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    background: var(--background);
 }
 
 
@@ -16,7 +17,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 3px;
+    gap: 1.5rem;
     font-size: 1rem;
     padding: 1em 2em;
 
@@ -32,6 +33,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    box-shadow: 0 8px 24px rgba(82, 82, 228, 0.15);
+    border: 4px solid #fff;
 }
 
 .profilePhoto img {
@@ -40,8 +43,19 @@
 }
 
 
+.heroContent {
+    margin-top: 0.5rem;
+}
+
 .heroContent p {
     text-align: center;
+    color: #555;
+    line-height: 1.8;
+}
+
+.highlight {
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 .heroOptions {
@@ -52,7 +66,6 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 1.5rem;
 }
 
 .heroOptions>button {
@@ -78,6 +91,13 @@
 
 .heroGreet {
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero h4 strong {
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.2rem;
 }
 
 

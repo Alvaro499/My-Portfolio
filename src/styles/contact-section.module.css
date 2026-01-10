@@ -1,6 +1,8 @@
 .container {
   min-height: auto;
   padding: 4rem 2rem;
+      background: var(--background);
+
 }
 
 .container > h2 {
@@ -130,13 +132,15 @@
 
 
 @media (min-width: 768px) {
-  .content {
-    flex-direction: row;
-  }
 
-  .infoCard,
+
+  
   .formCard {
     flex: 1;
+  }
+
+  .infoCard{
+    gap: 1rem;
   }
 
   .form {
@@ -146,7 +150,12 @@
 }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
+    .content {
+    flex-direction: row;
+  }
+
+
   .container {
     padding: 5rem 8rem;
   }

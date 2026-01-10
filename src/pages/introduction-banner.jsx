@@ -40,8 +40,16 @@ export default function IntroductionBanner() {
                         Alvaro Siles
                     </h1>
 
+                    <h4><strong>About Me:</strong></h4>
+
                     <div className={styles.heroContent}>
-                        <p>Lorem ipsum dolor sit ametam tempora, sequi et amet nesciunt, voluptatibus placeat temporibus voluptate, odit a laudantium fugit rerum ducimus. Ipsum.</p>
+                        <p>
+                            Hi, I'm a <span className={styles.highlight}>Business Informatics</span> student in my final year of studies, focused on building digital solutions with a business-oriented mindset.
+                        </p>
+                        <p>
+                            I'm looking for an opportunity to work on meaningful projects and give my best effort. Ready to learn, contribute, and grow in a professional environment.
+                        </p>
+
                     </div>
 
                     <div className={styles.heroOptions}>
