@@ -94,7 +94,7 @@
 .modalImagesContainer {
   display: grid;
   grid-template-columns: repeat(1, minmax(200px, 1fr));
-  gap: 1rem;
+  gap: 2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -105,13 +105,17 @@
 
 .modalImage{
   width: 100%;
+  max-height: 400px;
+  padding: 1rem;
+  border-top:  1px solid black;
+
 }
 
 .modalImagesContainer img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .modalFooter {
