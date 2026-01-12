@@ -48,9 +48,9 @@ const myProjects = [
     ],
     imageUrl: "/projects/gapa/front-page-img.jpg",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Xampp"],
-    demoLink: "https://www.google.com/?hl=es",
+    demoLink: "https://booking-system-ina.infinityfreeapp.com/",
     repoLink: "https://github.com/Alvaro499/Sistema-de-Reserva-de-Citas.git",
-    projectLink: "https://www.google.com/?hl=es",
+    projectLink: "https://booking-system-ina.infinityfreeapp.com/",
   },
   {
   title: "PyME Management Platform and Ecommerce – Microservices Architecture",
@@ -156,9 +156,9 @@ const myProjects = [
     "Microservices Architecture",
     "REST APIs",
   ],
-  demoLink: "https://www.google.com/?hl=es",
+  demoLink: "https://github.com/Alvaro499/sales-microservices.git",
   repoLink: "https://github.com/Alvaro499/sales-microservices.git",
-  projectLink: "https://www.google.com/?hl=es",
+  projectLink: "https://github.com/Alvaro499/sales-microservices.git",
 },
   {
     title: "ICE Fault Management System",
@@ -184,9 +184,9 @@ const myProjects = [
     imageUrl: "/projects/ice/admin-module.jpg",
     images: ["/projects/ice/admin-module.jpg"],
     technologies: ["Angular", "C#", "ASP.NET", "SQL Server", "HTML", "CSS", "TypeScript", "Bootstrap"],
-    demoLink: "https://www.google.com/?hl=es",
-    repoLink: "https://www.google.com/?hl=es",
-    projectLink: "https://www.google.com/?hl=es"
+    demoLink: "https://github.com/Alvaro499/ReporteriaICE-CopiaAlvaro.git",
+    repoLink: "https://github.com/Alvaro499/ReporteriaICE-CopiaAlvaro.git",
+    projectLink: "https://github.com/Alvaro499/ReporteriaICE-CopiaAlvaro.git"
   },
   {
     title: "Komodo",
@@ -234,9 +234,9 @@ const myProjects = [
     ],
     imageUrl: "/projects/komodo/komodo-front-page.jpg",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "PHPMailer"],
-    demoLink: "https://www.google.com/?hl=es",
+    demoLink: "https://komodo.infinityfreeapp.com/",
     repoLink: "https://github.com/Alvaro499/komodo.git",
-    projectLink: "https://www.google.com/?hl=es",
+    projectLink: "https://komodo.infinityfreeapp.com/",
   },
   {
     title: "Maze of Books – Inventory Management System",
