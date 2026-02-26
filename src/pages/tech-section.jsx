@@ -21,10 +21,8 @@ const technologies = [
   { name: "MySQL", icon: "mysql.svg", color: "#512BD4" },
   { name: "SQLServer", icon: "sql-server.svg", color: "#512BD4" },
   { name: "MongoDB", icon: "mongodb.svg", color: "#512BD4" },
-  { name: "Docker", icon: "docker.svg", color: "#512BD4" }
-
-
-
+  { name: "Docker", icon: "docker.svg", color: "#512BD4" },
+    { name: "Power BI", icon: "power-bi.svg", color: "#512BD4" },
 ];
 
 export default function TechSection() {
