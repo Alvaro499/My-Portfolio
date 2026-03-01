@@ -55,7 +55,7 @@ export default function IntroductionBanner() {
                     <div className={styles.heroOptions}>
                         <button className={styles.heroBtnResume}>
                             <a
-                                href="/others/resume-cv-alvaro-siles-quesada.pdf"
+                                href="/others/resume-alvaro-siles-quesada.pdf"
                                 download
                                 className={styles.heroBtnResume}
                             >
