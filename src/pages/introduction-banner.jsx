@@ -25,7 +25,7 @@ export default function IntroductionBanner() {
 
                 <div className={styles.profilePhoto}>
                     <Image
-                        src="/profile-photo/photo1.jpg"
+                        src="/profile-photo/profile1.jpg"
                         alt="Profile Photo"
                         width={600}
                         height={400}
